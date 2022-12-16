@@ -73,7 +73,6 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionStay2D(Collision2D collision)
     {
         contactNormal = collision.GetContact(0).normal;
-        Debug.Log(contactNormal.x+" "+contactNormal.y);
         if(collision.gameObject.layer == LayerMask.NameToLayer("ground"))
         {
             if (contactNormal.x == -1 && contactNormal.y < 1) // attach right
