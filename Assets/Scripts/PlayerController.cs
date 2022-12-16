@@ -14,12 +14,16 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();       
-        collider = GetComponent<Collider2D>();       
+        collider = GetComponent<Collider2D>();          
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (rb.IsSleeping())
+        {
+            rb.WakeUp();
+        }
 
         if (Input.GetKey(KeyCode.A))
         {
@@ -27,6 +31,7 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector2(-1, 1);
             if(collider.IsTouchingLayers(ground))
             animator.SetBool("running", true);
+            animator.SetBool("crouching", false);
         }
         else if (Input.GetKey(KeyCode.D))
         {
@@ -34,10 +39,17 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector2(1, 1);
             if(collider.IsTouchingLayers(ground))
             animator.SetBool("running", true);
+            animator.SetBool("crouching", false);
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            animator.SetBool("crouching",true);
+            animator.SetBool("running", false);
         }
         else
         {          
             animator.SetBool("running", false);
+            animator.SetBool("crouching", false);
         }
 
 
@@ -61,6 +73,7 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionStay2D(Collision2D collision)
     {
         contactNormal = collision.GetContact(0).normal;
+        Debug.Log(contactNormal.x+" "+contactNormal.y);
         if(collision.gameObject.layer == LayerMask.NameToLayer("ground"))
         {
             if (contactNormal.x == -1 && contactNormal.y < 1) // attach right
@@ -85,8 +98,9 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKey(KeyCode.W))
                 {
-                    rb.velocity = new Vector2(rb.velocity.x, 10f);
                     animator.SetBool("running", false);
+                    animator.SetBool("crouching", false);
+                    rb.velocity = new Vector2(rb.velocity.x, 10f);
                 }
             }
             // github test
