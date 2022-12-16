@@ -1,0 +1,1741 @@
+fileFormatVersion: 2
+guid: 17adb9afb17c6494696894268a668a51
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ForestTexturePacked_0
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 416
+        width: 53
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4745c224c8cd6c14aa590a4d4da2698d
+      internalID: 1407710638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 416
+        width: 53
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262208f6fc95adf4a93200c15ee3a3cb
+      internalID: 736850122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_2
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 415
+        width: 29
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7882de21a768ec046adbcdeba7811b2e
+      internalID: 1762742005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_3
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 481
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40030a7a0376dce4b9147edeaeb79f21
+      internalID: 646361737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_4
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 481
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af491d7715c64e5419558937bf11027c
+      internalID: -1147393179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_5
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 482
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5dc6b5169d7ab94b9d24cc1240b1fde
+      internalID: 20489946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_6
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 480
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91742fa7d4fee04b887c9e4ce330e6c
+      internalID: 2039914286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 416
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8c6b18791f51242b0f117766175793
+      internalID: -544179555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_8
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 415
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c78e726973a25489514643785c8704
+      internalID: 1092609940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_9
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 413
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4d08dfbdfee3a4382d0081e2fbb2cb
+      internalID: -461043078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_10
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 404
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944f0e549cd1d4844bc4edee30883baa
+      internalID: 609795099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_11
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 414
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c93f8273a729d419fd1f1df672e287
+      internalID: 1552405038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_12
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 412
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7681e47fae101942bd089b93ef81b92
+      internalID: 1228370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_13
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 412
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eacb495bcb355a40b36dfd8d634f7b2
+      internalID: -1726010518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_14
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 412
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0176cd3d8d8524994dc41fc44facd6
+      internalID: -1922431485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 376
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5e55dc81260cd4b9d2561cf169d3fa
+      internalID: -629328944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_16
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 376
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6ce10cca7b0c14ba5774438e894fbf
+      internalID: -1673432723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_17
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 403
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a024e662afb3b4daafbda733b82846
+      internalID: -1242394335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_18
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 398
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd5dfd2da9fa9643af65d9ed5789248
+      internalID: -399972992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_19
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 402
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549b94efaf3f0374c8f48fce06924307
+      internalID: 567514615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_20
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 396
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b397261634006fc47b8c91e0f500167f
+      internalID: -544460128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_21
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 376
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ebaa533aeb2d44fb86f7df430bb05f
+      internalID: -475179727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_22
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 376
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eda8315eb9e1644ba78e5930791f3f8
+      internalID: 1346425476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_23
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 401
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3550b09038859544fb8091b1fa4896a3
+      internalID: 336111216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_24
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 395
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93395c4e523df534dabdf1f90f78bba2
+      internalID: -1868663687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_25
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 394
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9272be47d2cf27946adb8d3841babec0
+      internalID: -743568142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_26
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 390
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f86759101f38ad47b1e7ab6e762a070
+      internalID: -1817956651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_27
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 393
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0d0d652ae9a5b479c4c01990531b8b
+      internalID: 555343963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_28
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 389
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb76d0af6952bf4c961b20274e42e8b
+      internalID: 1716639462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_29
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 378
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4eff376473ed949bcc7d719711b126
+      internalID: -338312379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_30
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 326
+        width: 34
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4859172f9e0c44b8f656e217863e95
+      internalID: 1242177822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_31
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 392
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d41b33c386bd1749b3cd75294f5c830
+      internalID: 744775027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_32
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 387
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1139ac2265646e543a913898c54b7bf8
+      internalID: 122855392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_33
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 383
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba426c2102647d4dae43d8d3e7c4467
+      internalID: -247846670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_34
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 330
+        width: 77
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7deb76fbc941de8429ebb6aa6a4c730f
+      internalID: 342091235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 386
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e0cd6bc93cc774d9603a2395c43b11
+      internalID: 1422499762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_36
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 385
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8addd0e817fa0408a1e9031cb34e64
+      internalID: -1957351220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_37
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 326
+        width: 32
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68464bacf0336134ea91a6daa384dbe7
+      internalID: -868494787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_38
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 326
+        width: 31
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35b82f0892dde24497bf5e4a5bdd4b1
+      internalID: -204220635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_39
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 325
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c426de2fcbfba4cbd47bd11d498681
+      internalID: 531937180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_40
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 388
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28e5051c99c756479e313758dbc4d7c
+      internalID: 206826956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_41
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 325
+        width: 27
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c47f8cdd85c85749bb06f553ceeec3e
+      internalID: 1495233894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_42
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 380
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f726404c620ee479d3003abeab7a57
+      internalID: 45123749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_43
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 325
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9349c63f411364647b1a4fd27330c334
+      internalID: -1220732875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_44
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 342
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c99271d50c14e745b2a0fb09485ac8d
+      internalID: -1728955984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_45
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 344
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521f0f07398afbe4db534a6b993f2104
+      internalID: 1372066962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_46
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 363
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a7fd231f505dc42a57463075687b91
+      internalID: -1959755256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_47
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 361
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b93c6b1e16429d4ba48a649547e1fad
+      internalID: 209660452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_48
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 366
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7396bdf757f7340ab76b83756a9b12
+      internalID: -253444581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_49
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 342
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e1fb6f3d6d84c4f9cec34b929caded
+      internalID: 319314520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_50
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 310
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba595d56ff4fa846a74cb74558d8b06
+      internalID: 2127598924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_51
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 326
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda8303d8fc24b94d825c10308e9ef65
+      internalID: 1637604911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_52
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 347
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ac6f20de2bdf14285f992e31558074
+      internalID: -579290980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_53
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 354
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2435b18ad0a8a6428a87ff97d393257
+      internalID: 318160081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_54
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 352
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecc686ed9c9d284caf98eef955c28dd
+      internalID: 610199021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_55
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 293
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54acac254fb2f014a879aa02291a3afa
+      internalID: -842029779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_56
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 299
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a08fcb3eff8f543b7cad1215db5840
+      internalID: 1218390623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_57
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 292
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb935f702d1ccfc4fa98fbaf1ad2bcff
+      internalID: 1065355380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_58
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 297
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e15dd4ba2dacc94aadd987b23c0dc70
+      internalID: -822600018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_59
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 320
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721c09af651d99540a195ea38b85c802
+      internalID: -1225554323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_60
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 320
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3848182cbf61544ab5cc925200a22e
+      internalID: -1650683208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_61
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 320
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311b62f6158d8b04d992aa181ce412a9
+      internalID: 117998998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_62
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 320
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79e4aeb6d41a2b48bdeb518a053c270
+      internalID: 1777142178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_63
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 320
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856b273ea1e5a9b4d899335b060b5a42
+      internalID: -920901909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_64
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 233
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bedf50d550856943bf7d30b5937e54f
+      internalID: 1877325120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_65
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 259
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8011e76f4207090428b86ca44d87503d
+      internalID: 588609042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_66
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 246
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69aed5f8efc153e46a325d3bdd5eac53
+      internalID: -679416749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_67
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 206
+        width: 408
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c0158e3ddbe524d9abf13d97e85874
+      internalID: -2026077978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_68
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 206
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec91cdd4a8bda04c9491fc26642ed9f
+      internalID: 289643487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_69
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 228
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8711bae0cbc66f946a370e217b096939
+      internalID: 1777958397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_70
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 232
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf03f8fbd64a7c40ba4b939c6ad0453
+      internalID: 1814577272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_71
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 221
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce02ffdf21cb08b4d83092e74ca1b53f
+      internalID: -551328869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTexturePacked_72
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 208
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47755255d758dc94cb57d82244c4b4ee
+      internalID: -903533727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ForestTexturePacked_50: 2127598924
+      ForestTexturePacked_46: -1959755256
+      ForestTexturePacked_53: 318160081
+      ForestTexturePacked_3: 646361737
+      ForestTexturePacked_13: -1726010518
+      ForestTexturePacked_8: 1092609940
+      ForestTexturePacked_67: -2026077978
+      ForestTexturePacked_22: 1346425476
+      ForestTexturePacked_58: -822600018
+      ForestTexturePacked_19: 567514615
+      ForestTexturePacked_64: 1877325120
+      ForestTexturePacked_4: -1147393179
+      ForestTexturePacked_44: -1728955984
+      ForestTexturePacked_0: 1407710638
+      ForestTexturePacked_1: 736850122
+      ForestTexturePacked_2: 1762742005
+      ForestTexturePacked_30: 1242177822
+      ForestTexturePacked_37: -868494787
+      ForestTexturePacked_49: 319314520
+      ForestTexturePacked_63: -920901909
+      ForestTexturePacked_34: 342091235
+      ForestTexturePacked_18: -399972992
+      ForestTexturePacked_23: 336111216
+      ForestTexturePacked_20: -544460128
+      ForestTexturePacked_66: -679416749
+      ForestTexturePacked_11: 1552405038
+      ForestTexturePacked_14: -1922431485
+      ForestTexturePacked_15: -629328944
+      ForestTexturePacked_69: 1777958397
+      ForestTexturePacked_26: -1817956651
+      ForestTexturePacked_43: -1220732875
+      ForestTexturePacked_16: -1673432723
+      ForestTexturePacked_61: 117998998
+      ForestTexturePacked_5: 20489946
+      ForestTexturePacked_27: 555343963
+      ForestTexturePacked_29: -338312379
+      ForestTexturePacked_12: 1228370
+      ForestTexturePacked_28: 1716639462
+      ForestTexturePacked_60: -1650683208
+      ForestTexturePacked_17: -1242394335
+      ForestTexturePacked_42: 45123749
+      ForestTexturePacked_55: -842029779
+      ForestTexturePacked_72: -903533727
+      ForestTexturePacked_39: 531937180
+      ForestTexturePacked_7: -544179555
+      ForestTexturePacked_65: 588609042
+      ForestTexturePacked_21: -475179727
+      ForestTexturePacked_10: 609795099
+      ForestTexturePacked_48: -253444581
+      ForestTexturePacked_52: -579290980
+      ForestTexturePacked_51: 1637604911
+      ForestTexturePacked_6: 2039914286
+      ForestTexturePacked_47: 209660452
+      ForestTexturePacked_40: 206826956
+      ForestTexturePacked_70: 1814577272
+      ForestTexturePacked_9: -461043078
+      ForestTexturePacked_33: -247846670
+      ForestTexturePacked_38: -204220635
+      ForestTexturePacked_35: 1422499762
+      ForestTexturePacked_36: -1957351220
+      ForestTexturePacked_41: 1495233894
+      ForestTexturePacked_68: 289643487
+      ForestTexturePacked_24: -1868663687
+      ForestTexturePacked_59: -1225554323
+      ForestTexturePacked_62: 1777142178
+      ForestTexturePacked_54: 610199021
+      ForestTexturePacked_57: 1065355380
+      ForestTexturePacked_56: 1218390623
+      ForestTexturePacked_25: -743568142
+      ForestTexturePacked_31: 744775027
+      ForestTexturePacked_32: 122855392
+      ForestTexturePacked_71: -551328869
+      ForestTexturePacked_45: 1372066962
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
