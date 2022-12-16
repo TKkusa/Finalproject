@@ -1520,6 +1520,7 @@ GameObject:
   - component: {fileID: 1537611592}
   - component: {fileID: 1537611591}
   - component: {fileID: 1537611590}
+  - component: {fileID: 1537611593}
   m_Layer: 5
   m_Name: InstructionBtn
   m_TagString: Untagged
@@ -1630,6 +1631,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537611588}
   m_CullTransparentMesh: 1
+--- !u!114 &1537611593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537611588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f363953599677474cbda2a9f36413f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instruction: {fileID: 159824187}
 --- !u!1 &1745916876
 GameObject:
   m_ObjectHideFlags: 0
