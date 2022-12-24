@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     private Vector2 contactNormal = Vector2.zero;
 
-    public Rigidbody2D rb;
-    public Animator animator;
+    [SerializeField] Rigidbody2D rb;
+    [SerializeField] Animator animator;
     private new Collider2D collider;
     [SerializeField] public LayerMask ground;
     // Start is called before the first frame update
