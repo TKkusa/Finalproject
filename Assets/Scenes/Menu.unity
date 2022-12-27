@@ -406,7 +406,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
-  m_Text: Use WASD to help lost Foxy get back his house
+  m_Text: "Use WASD to move and Space to attack. \n\nPlease help lost Foxy get back
+    his house"
 --- !u!222 &121095113
 CanvasRenderer:
   m_ObjectHideFlags: 0

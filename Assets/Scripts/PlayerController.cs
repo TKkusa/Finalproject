@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,11 +13,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator animator;
     private new Collider2D collider;
     [SerializeField] public LayerMask ground;
+    [SerializeField] int cherries = 0;
+    [SerializeField] float hurtForce;
+    public TextMeshProUGUI CherrtText;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();       
-        collider = GetComponent<Collider2D>();          
+        collider = GetComponent<Collider2D>();
+        hurtForce = 100f;
     }
 
     // Update is called once per frame
@@ -104,5 +111,33 @@ public class PlayerController : MonoBehaviour
             }
             // github test
         }
+
+        if (collision.gameObject.tag == "Enemy") {
+            if (animator.GetBool("falling"))
+            {
+                Destroy(collision.gameObject);
+            }
+            else
+            {
+                if (collision.transform.position.x > transform.position.x)
+                {
+                    rb.AddForce(new Vector2(-hurtForce, rb.velocity.y));
+                }
+                else {
+                    rb.AddForce(new Vector2(hurtForce, rb.velocity.y));
+                } 
+            }
+        }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.tag);
+        if (collision.tag == "Cherry") {
+            cherries++;
+            Destroy(collision.gameObject);
+            CherrtText.text = cherries.ToString();
+        }
+    }
+
 }
