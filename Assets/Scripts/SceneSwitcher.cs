@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour, IPointerClickHandler
 {
-    public int SceneIndexDestination = 1;
+    public int SceneIndexDestination = 2;
 
     void IPointerClickHandler.OnPointerClick(PointerEventData eventData)
     {

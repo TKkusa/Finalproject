@@ -12,6 +12,7 @@ public class Frog : MonoBehaviour
     [SerializeField] private LayerMask ground;
     private Collider2D coll;
     private Rigidbody2D rb;
+    private Animator animator;
 
     private bool facingLeft = true;
 
@@ -20,12 +21,30 @@ public class Frog : MonoBehaviour
     {
         coll = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         jumpLength = 5f;
         jumpHeight = 4f;
     }
 
     private void Update()
     {
+        if (animator.GetBool("Jumping"))
+        {
+            if (rb.velocity.y < .1)
+            {
+                animator.SetBool("Falling", true);
+                animator.SetBool("Jumping", false);
+            }
+        }
+        else if (coll.IsTouchingLayers(ground) && animator.GetBool("Falling")) {
+            animator.SetBool("Falling", false);
+        } 
+
+
+    }
+
+    private void Move() {
+
         if (facingLeft)
         {
             if (transform.position.x > leftCap)
@@ -37,6 +56,7 @@ public class Frog : MonoBehaviour
                 if (coll.IsTouchingLayers(ground))
                 {
                     rb.velocity = new Vector2(-jumpLength, jumpHeight);
+                    animator.SetBool("Jumping", true);
                 }
             }
             else
@@ -44,7 +64,8 @@ public class Frog : MonoBehaviour
                 facingLeft = false;
             }
         }
-        else {
+        else
+        {
             if (transform.position.x < rightCap)
             {
                 if (transform.localScale.x != -1)
@@ -54,6 +75,7 @@ public class Frog : MonoBehaviour
                 if (coll.IsTouchingLayers(ground))
                 {
                     rb.velocity = new Vector2(jumpLength, jumpHeight);
+                    animator.SetBool("Jumping", true);
                 }
             }
             else
@@ -61,5 +83,14 @@ public class Frog : MonoBehaviour
                 facingLeft = true;
             }
         }
+    }
+
+    public void JumpedOn() {
+        animator.SetTrigger("Death");
+    }
+
+    private void Death()
+    {
+        Destroy(gameObject);
     }
 }

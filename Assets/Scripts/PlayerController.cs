@@ -116,9 +116,13 @@ public class PlayerController : MonoBehaviour
         }
 
         if (collision.gameObject.tag == "Enemy") {
+
+            Frog frog = collision.gameObject.GetComponent<Frog>();
+
             if (animator.GetBool("falling"))
             {
-                Destroy(collision.gameObject);
+                frog.JumpedOn();
+                rb.AddForce(new Vector2(0, 100f));
             }
             else
             {
