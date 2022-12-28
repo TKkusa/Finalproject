@@ -117,12 +117,12 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.tag == "Enemy") {
 
-            Frog frog = collision.gameObject.GetComponent<Frog>();
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
 
             if (animator.GetBool("falling"))
             {
-                frog.JumpedOn();
-                rb.AddForce(new Vector2(0, 100f));
+                enemy.JumpedOn();
+                rb.AddForce(new Vector2(0, 150f));
             }
             else
             {
