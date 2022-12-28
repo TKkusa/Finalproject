@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                if(contactNormal.x<1 && contactNormal.y == 1)
                 rb.velocity = new Vector2(0, rb.velocity.y);
                 animator.SetBool("running", false);
                 animator.SetBool("crouching", false);
@@ -80,7 +81,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnCollisionStay2D(Collision2D collision)
-    {
+    {   
         animator.SetBool("hurt", false);
         contactNormal = collision.GetContact(0).normal;
         if(collision.gameObject.layer == LayerMask.NameToLayer("ground"))
