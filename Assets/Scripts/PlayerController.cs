@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public LayerMask ground;
     [SerializeField] int cherries = 0;
     public TextMeshProUGUI CherrtText;
+    [SerializeField] private AudioSource footstep;
+    [SerializeField] private AudioSource cherry;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -144,9 +147,14 @@ public class PlayerController : MonoBehaviour
         Debug.Log(collision.tag);
         if (collision.tag == "Cherry") {
             cherries++;
+            cherry.Play();
             Destroy(collision.gameObject);
             CherrtText.text = cherries.ToString();
         }
+    }
+
+    private void FootStep() { 
+        footstep.Play();
     }
 
 }

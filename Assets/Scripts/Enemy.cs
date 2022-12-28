@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     protected Animator animator;
     protected Rigidbody2D rb;
     protected Collider2D coll;
+    [SerializeField] protected AudioSource death;
 
     protected virtual void Start()
     {
@@ -19,6 +20,7 @@ public class Enemy : MonoBehaviour
         rb.velocity = Vector2.zero;
         coll.enabled = false;
         animator.SetTrigger("Death");
+        death.Play();
     }
 
     private void Death()
