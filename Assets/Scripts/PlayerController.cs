@@ -14,14 +14,12 @@ public class PlayerController : MonoBehaviour
     private new Collider2D collider;
     [SerializeField] public LayerMask ground;
     [SerializeField] int cherries = 0;
-    [SerializeField] float hurtForce;
     public TextMeshProUGUI CherrtText;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();       
         collider = GetComponent<Collider2D>();
-        hurtForce = 100f;
     }
 
     // Update is called once per frame
@@ -32,34 +30,38 @@ public class PlayerController : MonoBehaviour
             rb.WakeUp();
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (!animator.GetBool("hurt"))
         {
-            rb.velocity = new Vector2(-5, rb.velocity.y);
-            transform.localScale = new Vector2(-1, 1);
-            if(collider.IsTouchingLayers(ground))
-            animator.SetBool("running", true);
-            animator.SetBool("crouching", false);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            rb.velocity = new Vector2(5, rb.velocity.y);
-            transform.localScale = new Vector2(1, 1);
-            if(collider.IsTouchingLayers(ground))
-            animator.SetBool("running", true);
-            animator.SetBool("crouching", false);
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            animator.SetBool("crouching",true);
-            animator.SetBool("running", false);
-        }
-        else
-        {          
-            animator.SetBool("running", false);
-            animator.SetBool("crouching", false);
+            if (Input.GetKey(KeyCode.A))
+            {
+                rb.velocity = new Vector2(-5, rb.velocity.y);
+                transform.localScale = new Vector2(-1, 1);
+                if (collider.IsTouchingLayers(ground))
+                    animator.SetBool("running", true);
+                animator.SetBool("crouching", false);
+            }
+            else if (Input.GetKey(KeyCode.D))
+            {
+                rb.velocity = new Vector2(5, rb.velocity.y);
+                transform.localScale = new Vector2(1, 1);
+                if (collider.IsTouchingLayers(ground))
+                    animator.SetBool("running", true);
+                animator.SetBool("crouching", false);
+            }
+            else if (Input.GetKey(KeyCode.S))
+            {
+                animator.SetBool("crouching", true);
+                animator.SetBool("running", false);
+            }
+            else
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetBool("running", false);
+                animator.SetBool("crouching", false);
+            }
         }
 
-
+        
 
         // jump animation
         if(rb.velocity.y > 0.1f)
@@ -79,6 +81,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        animator.SetBool("hurt", false);
         contactNormal = collision.GetContact(0).normal;
         if(collision.gameObject.layer == LayerMask.NameToLayer("ground"))
         {
@@ -121,11 +124,12 @@ public class PlayerController : MonoBehaviour
             {
                 if (collision.transform.position.x > transform.position.x)
                 {
-                    rb.AddForce(new Vector2(-hurtForce, rb.velocity.y));
+                    rb.AddForce(new Vector2(-200f, 100f));
                 }
                 else {
-                    rb.AddForce(new Vector2(hurtForce, rb.velocity.y));
-                } 
+                    rb.AddForce(new Vector2(200f, 100f));
+                }
+                animator.SetBool("hurt", true);
             }
         }
     }
