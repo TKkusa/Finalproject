@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI CherrtText;
     [SerializeField] private AudioSource footstep;
     [SerializeField] private AudioSource cherry;
+    [SerializeField] private AudioSource jump_sound_effect;
+    [SerializeField] private AudioSource hitted_sound_effect;
+
 
     // Start is called before the first frame update
     void Start()
@@ -96,6 +99,7 @@ public class PlayerController : MonoBehaviour
                     rb.velocity = new Vector2(-5, 10f);
                     transform.localScale = new Vector2(-1, 1);
                     animator.SetBool("running", false);
+                    jump_sound_effect.Play();
                 }
             }
             else if(contactNormal.x == 1 && contactNormal.y < 1) // attach left
@@ -105,6 +109,7 @@ public class PlayerController : MonoBehaviour
                     rb.velocity = new Vector2(5, 10f);
                     transform.localScale = new Vector2(1, 1);
                     animator.SetBool("running", false);
+                    jump_sound_effect.Play();
                 }
             }
             else
@@ -114,6 +119,7 @@ public class PlayerController : MonoBehaviour
                     animator.SetBool("running", false);
                     animator.SetBool("crouching", false);
                     rb.velocity = new Vector2(rb.velocity.x, 10f);
+                    jump_sound_effect.Play();
                 }
             }
             // github test
@@ -138,6 +144,7 @@ public class PlayerController : MonoBehaviour
                     rb.AddForce(new Vector2(200f, 100f));
                 }
                 animator.SetBool("hurt", true);
+                hitted_sound_effect.Play();
             }
         }
     }
