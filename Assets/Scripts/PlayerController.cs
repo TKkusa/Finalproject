@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
@@ -13,19 +14,28 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator animator;
     private new Collider2D collider;
     [SerializeField] public LayerMask ground;
-    [SerializeField] int cherries = 0;
-    public TextMeshProUGUI CherrtText;
     [SerializeField] private AudioSource footstep;
     [SerializeField] private AudioSource cherry;
     [SerializeField] private AudioSource jump_sound_effect;
     [SerializeField] private AudioSource hitted_sound_effect;
+    [SerializeField] private AudioSource gem_sound;
+    [SerializeField] private TextMeshProUGUI GemText;
+    [SerializeField] private TextMeshProUGUI instruction;
+    [SerializeField] private HealthBar healthbar;
+    
 
+    private int gems = 0;
+    private int health;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();       
         collider = GetComponent<Collider2D>();
+        health = 3;
+        healthbar.SetHealth(health);
+        StartCoroutine(TurnOffInstruction());
+   
     }
 
     // Update is called once per frame
@@ -132,10 +142,14 @@ public class PlayerController : MonoBehaviour
             if (animator.GetBool("falling"))
             {
                 enemy.JumpedOn();
-                rb.AddForce(new Vector2(0, 150f));
+                rb.AddForce(new Vector2(0, 700f));
             }
             else
             {
+                healthbar.SetHealth(--health);
+                if (health <= 0) {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                }
                 if (collision.transform.position.x > transform.position.x)
                 {
                     rb.AddForce(new Vector2(-200f, 100f));
@@ -153,15 +167,29 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log(collision.tag);
         if (collision.tag == "Cherry") {
-            cherries++;
+            if (health < 5)
+            {
+                healthbar.SetHealth(++health);
+            }
             cherry.Play();
             Destroy(collision.gameObject);
-            CherrtText.text = cherries.ToString();
+        }
+        if (collision.tag == "Gem")
+        {
+            gems++;
+            GemText.text = gems.ToString();
+            gem_sound.Play();
+            Destroy(collision.gameObject);
         }
     }
 
     private void FootStep() { 
         footstep.Play();
+    }
+
+    private IEnumerator TurnOffInstruction() {
+        yield return new WaitForSeconds(3);
+        instruction.enabled = false;
     }
 
 }

@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     public void JumpedOn()
     {
         rb.velocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        GetComponent<Collider2D>().enabled = false;
         coll.enabled = false;
         animator.SetTrigger("Death");
         death.Play();
