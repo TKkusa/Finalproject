@@ -22,10 +22,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI GemText;
     [SerializeField] private TextMeshProUGUI instruction;
     [SerializeField] private HealthBar healthbar;
+    [SerializeField] private float climbSpeed;
+
+    [HideInInspector] public bool canClimb = false;
+    [HideInInspector] public Ladder ladder;
     
 
     private int gems = 0;
     private int health;
+    private float naturalGravity;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +40,8 @@ public class PlayerController : MonoBehaviour
         health = 3;
         healthbar.SetHealth(health);
         StartCoroutine(TurnOffInstruction());
-   
+        naturalGravity = rb.gravityScale;
+        climbSpeed = 3f;
     }
 
     // Update is called once per frame
@@ -48,6 +54,18 @@ public class PlayerController : MonoBehaviour
 
         if (!animator.GetBool("hurt"))
         {
+            if (canClimb)
+            {
+                animator.SetBool("climb", true);
+                Climb();
+                rb.gravityScale = 0f;
+            }
+            else if (!canClimb) {
+                rb.gravityScale = naturalGravity;
+                animator.SetBool("climb", false);
+                animator.speed = 1f;
+            }
+
             if (Input.GetKey(KeyCode.A))
             {
                 rb.velocity = new Vector2(-5, rb.velocity.y);
@@ -76,16 +94,18 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("running", false);
                 animator.SetBool("crouching", false);
             }
+
         }
 
         
 
+
         // jump animation
-        if(rb.velocity.y > 0.1f)
+        if (rb.velocity.y > 0.1f && !canClimb)
         {
             animator.SetBool("jumping",true);
         }
-        else if(rb.velocity.y < 0.1f && !collider.IsTouchingLayers(ground))
+        else if(rb.velocity.y < 0.1f && !collider.IsTouchingLayers(ground) && !canClimb)
         {
             animator.SetBool("falling", true);
         }
@@ -94,13 +114,15 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("falling",false);
             animator.SetBool("jumping",false);
         }
+
+        
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {   
         animator.SetBool("hurt", false);
         contactNormal = collision.GetContact(0).normal;
-        if(collision.gameObject.layer == LayerMask.NameToLayer("ground"))
+        if(collision.gameObject.layer == LayerMask.NameToLayer("ground") && !canClimb)
         {
             if (contactNormal.x == -1 && contactNormal.y < 1) // attach right
             {
@@ -190,6 +212,25 @@ public class PlayerController : MonoBehaviour
     private IEnumerator TurnOffInstruction() {
         yield return new WaitForSeconds(3);
         instruction.enabled = false;
+    }
+
+    private void Climb() {
+        float vDirection = Input.GetAxis("Vertical");
+
+        if (vDirection > .1f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, vDirection * climbSpeed);
+            animator.speed = 1f;
+        }
+        else if (vDirection < -.1f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, vDirection * climbSpeed);
+            animator.speed = 1f;
+        }
+        else {
+            rb.velocity = new Vector2(rb.velocity.x, 0f);
+            animator.speed = 0f;
+        }
     }
 
 }
