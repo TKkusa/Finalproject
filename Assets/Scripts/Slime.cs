@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vulture : Enemy
+public class Slime : Enemy
 {
     [SerializeField] private float rightCap;
     [SerializeField] private float leftCap;
@@ -10,13 +10,13 @@ public class Vulture : Enemy
     [SerializeField] private float jumpLength;
     [SerializeField] private LayerMask ground;
 
-    private bool facingLeft = false;
+    private bool facingLeft = true;
 
 
     protected override void Start()
     {
         base.Start();
-        jumpLength = 8f;
+        jumpLength = 2f;
     }
 
     private void Update()
@@ -27,17 +27,18 @@ public class Vulture : Enemy
 
     private void Move()
     {
-
+        animator.SetBool("Move", true);
         if (facingLeft)
         {
             if (transform.position.x > leftCap)
             {
-                if (transform.localScale.x != -1)
+                if (transform.localScale.x != 1)
                 {
-                    transform.localScale = new Vector3(-1, 1, 1);
+                    transform.localScale = new Vector3(1, 1, 1);
                 }
 
-                rb.velocity = new Vector2(-jumpLength, 0);
+                rb.velocity = new Vector2(-jumpLength, 1f);
+
             }
             else
             {
@@ -48,12 +49,12 @@ public class Vulture : Enemy
         {
             if (transform.position.x < rightCap)
             {
-                if (transform.localScale.x != 1)
+                if (transform.localScale.x != -1)
                 {
-                    transform.localScale = new Vector3(1, 1, 1);
+                    transform.localScale = new Vector3(-1, 1, 1);
                 }
 
-                rb.velocity = new Vector2(jumpLength, 0);
+                rb.velocity = new Vector2(jumpLength, 1f);
 
             }
             else
@@ -61,6 +62,15 @@ public class Vulture : Enemy
                 facingLeft = true;
             }
         }
+    }
+
+    private void Idle() {
+        animator.SetBool("Move", false);
+    }
+
+    private void Next()
+    {
+        animator.SetBool("Move", true);
     }
 
     //public void JumpedOn() {

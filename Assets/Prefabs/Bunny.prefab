@@ -264,9 +264,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b8a1084c54a739408851a632e1220dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  death: {fileID: 0}
-  rightCap: 25
-  leftCap: 20
+  death: {fileID: 5884189891921247008}
+  rightCap: -20
+  leftCap: -20
   jumpLength: 0
   jumpHeight: 0
   ground:

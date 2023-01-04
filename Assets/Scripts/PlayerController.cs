@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {   
-        animator.SetBool("hurt", false);
+        
         contactNormal = collision.GetContact(0).normal;
         if(collision.gameObject.layer == LayerMask.NameToLayer("ground") && !canClimb)
         {
@@ -147,7 +147,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                if (Input.GetKey(KeyCode.W))
+                if (Input.GetKey(KeyCode.W) && !animator.GetBool("hurt"))
                 {
                     animator.SetBool("running", false);
                     animator.SetBool("crouching", false);
@@ -181,6 +181,7 @@ public class PlayerController : MonoBehaviour
                     rb.AddForce(new Vector2(200f, 100f));
                 }
                 animator.SetBool("hurt", true);
+                StartCoroutine(notHurt());
                 hitted_sound_effect.Play();
             }
         }
@@ -232,6 +233,11 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, 0f);
             animator.speed = 0f;
         }
+    }
+
+    private IEnumerator notHurt() {
+        yield return new WaitForSeconds(0.7f);
+        animator.SetBool("hurt", false);
     }
 
 }
