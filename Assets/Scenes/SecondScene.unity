@@ -1233,6 +1233,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5507709728038497429, guid: 680cf1fe2a922c0469f2ddbdfb84fda2, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680cf1fe2a922c0469f2ddbdfb84fda2, type: 3}
 --- !u!4 &302709190 stripped
@@ -18194,6 +18198,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7722126055329970994, guid: a745a9088a5404f46b6280f73a6ad866, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6dd024bdf54c1f84383abb728fb7c147, type: 3}
     - target: {fileID: 7722126055329970995, guid: a745a9088a5404f46b6280f73a6ad866, type: 3}
       propertyPath: m_Name
       value: BackGroundMusic1
