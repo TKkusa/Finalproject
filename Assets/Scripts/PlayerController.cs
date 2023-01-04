@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -161,7 +162,7 @@ public class PlayerController : MonoBehaviour
 
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
 
-            if (animator.GetBool("falling"))
+            if (animator.GetBool("falling") && transform.position.y >= collision.collider.bounds.max.y)
             {
                 enemy.JumpedOn();
                 rb.AddForce(new Vector2(0, 700f));

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Eagle : Enemy
+public class Rat : Enemy
 {
     [SerializeField] private float rightCap;
     [SerializeField] private float leftCap;
@@ -19,11 +19,6 @@ public class Eagle : Enemy
         jumpLength = 5f;
     }
 
-    private void Update()
-    {
-
-
-    }
 
     private void Move()
     {
@@ -63,12 +58,4 @@ public class Eagle : Enemy
         }
     }
 
-    //public void JumpedOn() {
-    //    animator.SetTrigger("Death");
-    //}
-
-    //private void Death()
-    //{
-    //    Destroy(gameObject);
-    //}
 }

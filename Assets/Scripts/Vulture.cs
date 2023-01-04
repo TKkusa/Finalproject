@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Eagle : Enemy
+public class Vulture : Enemy
 {
     [SerializeField] private float rightCap;
     [SerializeField] private float leftCap;
@@ -10,7 +10,7 @@ public class Eagle : Enemy
     [SerializeField] private float jumpLength;
     [SerializeField] private LayerMask ground;
 
-    private bool facingLeft = true;
+    private bool facingLeft = false;
 
 
     protected override void Start()
@@ -32,9 +32,9 @@ public class Eagle : Enemy
         {
             if (transform.position.x > leftCap)
             {
-                if (transform.localScale.x != 1)
+                if (transform.localScale.x != -1)
                 {
-                    transform.localScale = new Vector3(1, 1, 1);
+                    transform.localScale = new Vector3(-1, 1, 1);
                 }
 
                 rb.velocity = new Vector2(-jumpLength, 0);
@@ -48,9 +48,9 @@ public class Eagle : Enemy
         {
             if (transform.position.x < rightCap)
             {
-                if (transform.localScale.x != -1)
+                if (transform.localScale.x != 1)
                 {
-                    transform.localScale = new Vector3(-1, 1, 1);
+                    transform.localScale = new Vector3(1, 1, 1);
                 }
 
                 rb.velocity = new Vector2(jumpLength, 0);
