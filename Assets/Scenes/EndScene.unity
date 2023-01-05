@@ -1136,11 +1136,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7722126055329970994, guid: a745a9088a5404f46b6280f73a6ad866, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722126055329970994, guid: a745a9088a5404f46b6280f73a6ad866, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722126055329970994, guid: a745a9088a5404f46b6280f73a6ad866, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4bf4a117cbf2eb94ba71d6c28aa6ea43, type: 3}
+    - target: {fileID: 7722126055329970994, guid: a745a9088a5404f46b6280f73a6ad866, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7722126055329970995, guid: a745a9088a5404f46b6280f73a6ad866, type: 3}
       propertyPath: m_Name
       value: BackGroundMusic1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7722126055329970992, guid: a745a9088a5404f46b6280f73a6ad866, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a745a9088a5404f46b6280f73a6ad866, type: 3}
 --- !u!1 &1745916876
 GameObject:
