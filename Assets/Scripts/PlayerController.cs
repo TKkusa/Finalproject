@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("crouching", true);
                 animator.SetBool("running", false);
             }
-            else
+            else 
             {
                 if(contactNormal.x<1 && contactNormal.y == 1)
                 rb.velocity = new Vector2(0, rb.velocity.y);
@@ -145,7 +145,7 @@ public class PlayerController : MonoBehaviour
                     jump_sound_effect.Play();
                 }
             }
-            else
+            else if(contactNormal.y > 0.9)
             {
                 if (Input.GetKey(KeyCode.W) && !animator.GetBool("hurt"))
                 {
